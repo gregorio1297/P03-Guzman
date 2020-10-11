@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aerolinea</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/calen.css">
+    
 </head>
 <body>
     
     <header>
-        <p class="text-center font-weight-bolder">Bienvenido</p>
+        <p class="text-center font-weight-light">Bienvenido</p>
     </header>
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="IMGS/plane1.jpg" class="d-block w-100" alt="...">
+            <img src="IMGS/plane3.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="IMGS/plane2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="IMGS/plane3.jpg" class="d-block w-100" alt="...">
+            <img src="IMGS/plane1.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -35,9 +37,45 @@
         </a>
       </div>
 
+      <div class="texto1">
+        <h1><p class="font-weight-light">Reserva tu vuelo</p></h1>
+      </div>
+
+      <div class="cont">
+        <h2>Elige el dia</h2>
+        <p><input type="text" id="date-input" data-dd-theme="my-style" data-dd-large="true" data-dd-large-default="true"></p>
+        <p><h3>Destino</h3></p>
+        <div class="enmedio">
+          <div class="input-group mb-3 col-2">
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Destino...</option>
+              <option value="1">Monterrey</option>
+              <option value="2">Leon</option>
+              <option value="3">Cancun</option>
+              <option value="4">CDMX</option>
+              <option value="5">Mazatlan</option>
+            </select>
+          </div>
+        </div>
+          
+        
+
+        <button type="button" class="btn btn-dark">Reservar</button>
+            
+      </div>
+
+
+      <footer class="text-center">
+        <p>Copyright &copy; 2020 - Gregorio Guzman</p>
+      </footer>
+
+
+
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="JS/datedropper.pro.min.js"></script>
     <script src="JS/bootstrap.bundle.min.js"> </script>
+    <script>$('#date-input').dateDropper();</script> 
 
 </body>
 </html>
